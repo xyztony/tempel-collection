@@ -71,7 +71,8 @@
     (rust-ts-mode . "rust")
     (toml-ts-mode . "toml")
     (typescript-ts-base-mode . "typescript")
-    (yaml-ts-mode . "yaml")))
+    (yaml-ts-mode . "yaml")
+    (zig-ts-mode . "zig")))
 
 (defun tempel-collection--mode-file (mode-name)
   "Get the file name for the templates of MODE-NAME, if it exists."
@@ -79,6 +80,7 @@
     (if (file-exists-p file)
         file
       nil)))
+
 
 ;;;###autoload
 (defun tempel-collection ()
